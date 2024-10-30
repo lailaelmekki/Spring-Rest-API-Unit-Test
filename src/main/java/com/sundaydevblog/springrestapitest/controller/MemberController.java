@@ -70,10 +70,7 @@ public class MemberController {
         }
     }
 
-    @GetMapping(value = "/hello")
-    public String sayHi(){
-        return "Say hello to my little friend, Jenkins!";
-    }
+
 
     @GetMapping(value = "/ping")
     public ResponseEntity<String> ping() {
