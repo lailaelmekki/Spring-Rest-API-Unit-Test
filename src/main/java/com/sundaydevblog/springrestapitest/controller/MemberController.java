@@ -75,4 +75,10 @@ public class MemberController {
         return "Say hello to my little friend, Jenkins!";
     }
 
+    @GetMapping(value = "/ping")
+    public ResponseEntity<String> ping() {
+        return new ResponseEntity<>("Server is up and running!", HttpStatus.OK);
+    }
+
+
 }
